@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #ffccdd, #d4a5ff);
+}
+
+#flowerCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4vw;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.greeting h1 {
+  font-size: 8vw;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.greeting p {
+  font-size: 4.5vw;
+  margin-top: 3vw;
+}
+
+.reasons h2, .journey h2, .confession h2 {
+  font-size: 6vw;
+}
+
+.reasons p, .journey p, .confession p {
+  font-size: 3.5vw;
+  margin: 3vw 0;
+}
+
+.reasons img {
+  max-width: 80vw;
+  border-radius: 10px;
+}
+
+.button-group {
+  display: flex;
+  gap: 3vw;
+  margin-top: 5vw;
+}
+
+.accept-btn, .reject-btn {
+  padding: 3vw 6vw;
+  font-size: 3.5vw;
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.accept-btn {
+  background: #ff6699;
+}
+
+.accept-btn:hover {
+  background: #ff3366;
+  transform: scale(1.1);
+}
+
+.reject-btn {
+  background: #666;
+  position: relative;
+}
+
+.reject-btn:hover {
+  background: #555;
+}
+
+.response {
+  margin-top: 5vw;
+  font-size: 4vw;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.response.show {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .greeting h1 {
+    font-size: 3rem;
+  }
+  .greeting p {
+    font-size: 1.5rem;
+  }
+  .reasons h2, .journey h2, .confession h2 {
+    font-size: 2.5rem;
+  }
+  .reasons p, .journey p, .confession p {
+    font-size: 1.2rem;
+  }
+  .reasons img {
+    max-width: 300px;
+  }
+  .accept-btn, .reject-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+  }
+  .response {
+    font-size: 1.3rem;
+  }
+}

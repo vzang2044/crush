@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bông Hoa Bé Nhỏ Của Gián</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Canvas cho hoa rơi -->
+  <canvas id="flowerCanvas"></canvas>
+
+  <!-- Section 1: Lời chào -->
+  <section class="section greeting">
+    <h1 class="fade-in">Gửi Petite Fleur de Cafard</h1>
+    <p class="fade-in">em là bông hoa bé nhỏ làm trái tim tui rung rinh...</p>
+  </section>
+
+  <!-- Section 2: Lý do thích crush -->
+  <section class="section reasons">
+    <div class="content">
+      <h2 class="scroll-reveal">Vì sao tui thích em?</h2>
+      <p class="scroll-reveal">Nụ cười của em như nắng mai, làm tui quên hết mệt mỏi. em là người khiến Gián này muốn bay cao hơn mỗi ngày!</p>
+      <img src="meme.jpg" alt="Meow" class="scroll-reveal">
+    </div>
+  </section>
+
+  <!-- Section 3: Hành trình crush -->
+  <section class="section journey">
+    <div class="content">
+      <h2 class="scroll-reveal">Hành trình crush em</h2>
+      <p class="scroll-reveal">Từ ngày thấy em, tui như lạc vào vườn hoa. Mỗi tin nhắn, mỗi lần gặp, là một cánh hoa rơi vào tim tui. em có biết tui hồi hộp cỡ nào khi làm cái web này không?</p>
+    </div>
+  </section>
+
+  <!-- Section 4: Tỏ tình và nút chọn -->
+  <section class="section confession">
+    <div class="content">
+      <h2 class="scroll-reveal">Và đây là lời tui muốn nói...</h2>
+      <p class="scroll-reveal">em có muốn làm bông hoa bé nhỏ của đời Gián này không? Tui hứa sẽ chăm sóc bông hoa này thật tốt, không để cánh hoa nào rơi!</p>
+      <div class="button-group">
+        <button id="acceptButton" class="accept-btn">Đồng ý nha! 🌸</button>
+        <button id="rejectButton" class="reject-btn">Không nha!</button>
+      </div>
+      <p id="response" class="response hidden">Yay! em là Petite Fleur tuyệt nhất, Gián này hạnh phúc lắm! 😍</p>
+    </div>
+  </section>
+
+  <!-- Thư viện -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
